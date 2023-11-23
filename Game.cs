@@ -1,4 +1,4 @@
-﻿using ProjetNarratif.Rooms;
+﻿using ProjetNarratif.Classe;
 
 namespace ProjetNarratif
 {
@@ -9,7 +9,6 @@ namespace ProjetNarratif
         internal bool IsGameOver() => isFinished;
         static bool isFinished;
         static string nextRoom = "";
-
         internal void Add(Room room)
         {
             rooms.Add(room);
