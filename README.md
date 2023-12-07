@@ -78,3 +78,6 @@ Système de combat:
         }
         action = new Random().Next(3);
         break;
+
+Reférences:
+	https://learn.microsoft.com/fr-fr/dotnet/csharp/fundamentals/tutorials/classes
