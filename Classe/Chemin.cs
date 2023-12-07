@@ -31,6 +31,7 @@ Devant vous se trouve un [porte] barré.";
                 case "lit":
                     Console.WriteLine("Vous faites une sieste en espérant vous réveiller ailleur");
                     Console.WriteLine("Vous vous réveillé au même endroit");
+                    Game.Transition<Devinette>();
                     break;
                 case "portrait":
                     Console.WriteLine("Vous examiné le portrait.\n" +

@@ -7,6 +7,7 @@ game.Add(new Lvl1());
 game.Add(new Lvl2());
 game.Add(new Champion());
 game.Add(new Reward());
+game.Add(new Devinette());
 
 while (!game.IsGameOver())
 {
