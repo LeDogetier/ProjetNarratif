@@ -3,10 +3,9 @@ using ProjetNarratif.Classe;
 
 var game = new Game();
 game.Add(new ChoixChemin());
-game.Add(new Lvl1force());
-game.Add(new Lvl1savoir());
-game.Add(new Lvl2forceaxe());
-game.Add(new Lvl2savoir());
+game.Add(new Lvl1());
+game.Add(new Lvl2());
+game.Add(new Champion());
 game.Add(new Reward());
 
 while (!game.IsGameOver())

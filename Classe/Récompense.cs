@@ -19,18 +19,18 @@ ou un [bouclier], qui ajoute 2 à votre bloque.";
                     int x = 1;
                     break;
                 case "hache":
-                    Armes hache = new Armes(2, 0);
+                    //Armes hache = new Armes(2, 0);
                     x = 2;
                     break;
                 case "bouclier":
-                    Armes bouclier = new Armes(0, 2);
+                    //Armes bouclier = new Armes(0, 2);
                     x = 3;
                     break;
                 default:
                     Console.WriteLine("Commande invalide.");
                     break;
             }
-            Game.Transition<Lvl2forceaxe>();
+            //Game.Transition<Lvl2forceaxe>();
         }
     }
 }

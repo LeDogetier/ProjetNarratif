@@ -6,25 +6,43 @@ using System.Threading.Tasks;
 
 namespace ProjetNarratif.Classe
 {
-    internal class Personnage
+     class Personnage : Room
     {
-        public int hp, damage, intelligence, block, bleed;
-        public Personnage(int personnagehp, int personnagedamage, int personnageintelligence, int personnageblock, int personnagebleed)
+        public int hp, damage, intelligence, block;
+        public Personnage(int personnagehp, int personnagedamage, int personnageintelligence, int personnageblock)
         {
             this.hp = personnagehp;
             this.damage = personnagedamage;
             this.intelligence = personnageintelligence;
             this.block = personnageblock;
-            this.bleed = personnagebleed;
+        }
+        internal override string CreateDescription() =>
+@"Voulez-vous prendre le chemin de la [force]";
+
+        internal override void ReceiveChoice(string choice)
+        {
+            switch (choice)
+            {
+                case "force":
+                    //Game.Transition<Lvl1force>();
+                    break;
+                case "savoir":
+                    //Game.Transition<Lvl1savoir>();
+                    break;
+                default:
+                    Console.WriteLine("Commande invalide.");
+                    break;
+            }
         }
     }
-    internal class Armes
+    public class Armes
     {
-        public int damage, block;
-        public Armes(int statdamage, int statblock)
+        public int damage, block, bleed;
+        public Armes(int statdamage, int statblock, int statbleed)
         {
             this.damage = statdamage;
             this.block = statblock;
+            this.bleed = statbleed;
         }
     }
 }
